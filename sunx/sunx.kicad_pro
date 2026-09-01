@@ -490,7 +490,7 @@
       "idf": "",
       "netlist": "",
       "plot": "gerber_output/",
-      "pos_files": "",
+      "pos_files": "gerber_output/",
       "specctra_dsn": "",
       "step": "sunx.step",
       "svg": "",

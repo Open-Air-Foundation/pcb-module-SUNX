@@ -1039,32 +1039,36 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Jumper:SolderJumper_3_Open"
-			(pin_names
-				(offset 0)
+		(symbol "Device:C_Polarized"
+			(pin_numbers
 				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "JP"
-				(at -2.54 -2.54 0)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Value" "SolderJumper_3_Open"
-				(at 0 2.794 0)
+			(property "Value" "C_Polarized"
+				(at 0.635 -2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
-				(at 0 0 0)
+				(at 0.9652 -3.81 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1081,7 +1085,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Solder Jumper, 3-pole, open"
+			(property "Description" "Polarized capacitor"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1090,7 +1094,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "Solder Jumper SPDT"
+			(property "ki_keywords" "cap capacitor"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1099,7 +1103,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SolderJumper*Open*"
+			(property "ki_fp_filters" "CP_*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1108,11 +1112,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "SolderJumper_3_Open_0_1"
-				(polyline
-					(pts
-						(xy -2.54 0) (xy -2.032 0)
-					)
+			(symbol "C_Polarized_0_1"
+				(rectangle
+					(start -2.286 0.508)
+					(end 2.286 1.016)
 					(stroke
 						(width 0)
 						(type default)
@@ -1123,7 +1126,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.016 1.016) (xy -1.016 -1.016)
+						(xy -1.778 2.286) (xy -0.762 2.286)
 					)
 					(stroke
 						(width 0)
@@ -1133,107 +1136,35 @@
 						(type none)
 					)
 				)
-				(arc
-					(start -1.016 -1.016)
-					(mid -2.0276 0)
-					(end -1.016 1.016)
+				(polyline
+					(pts
+						(xy -1.27 2.794) (xy -1.27 1.778)
+					)
 					(stroke
 						(width 0)
 						(type default)
 					)
 					(fill
 						(type none)
-					)
-				)
-				(arc
-					(start -1.016 -1.016)
-					(mid -2.0276 0)
-					(end -1.016 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
 					)
 				)
 				(rectangle
-					(start -0.508 1.016)
-					(end 0.508 -1.016)
+					(start 2.286 -0.508)
+					(end -2.286 -1.016)
 					(stroke
 						(width 0)
 						(type default)
 					)
 					(fill
 						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.27) (xy 0 -1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 1.016 1.016)
-					(mid 2.0276 0)
-					(end 1.016 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 1.016 1.016)
-					(mid 2.0276 0)
-					(end 1.016 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 1.016) (xy 1.016 -1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 2.032 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
 					)
 				)
 			)
-			(symbol "SolderJumper_3_Open_1_1"
+			(symbol "C_Polarized_1_1"
 				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "A"
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1250,8 +1181,8 @@
 				)
 				(pin passive line
 					(at 0 -3.81 90)
-					(length 2.54)
-					(name "C"
+					(length 2.794)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1266,10 +1197,239 @@
 						)
 					)
 				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
 				(pin passive line
-					(at 5.08 0 180)
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Regulator_Linear:AP2112K-3.3"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -5.08 5.715 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "AP2112K-3.3"
+				(at 0 5.715 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+				(at 0 8.255 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP2112.pdf"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "600mA low dropout linear regulator, with enable pin, 3.8V-6V input voltage range, 3.3V fixed positive output, SOT-23-5"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "linear regulator ldo fixed positive"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23?5*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "AP2112K-3.3_0_1"
+				(rectangle
+					(start -5.08 4.445)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "AP2112K-3.3_1_1"
+				(pin power_in line
+					(at -7.62 2.54 0)
 					(length 2.54)
-					(name "B"
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "EN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1284,94 +1444,10 @@
 						)
 					)
 				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Regulator_Linear:HT75xx-1-SOT89"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at -5.08 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "HT75xx-1-SOT89"
-				(at 0 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-89-3"
-				(at 0 8.255 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.holtek.com/documents/10179/116711/HT75xx-1v250.pdf"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "100mA Low Dropout Voltage Regulator, Fixed Output, SOT89"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "100mA LDO Regulator Fixed Positive"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SOT?89*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "HT75xx-1-SOT89_0_1"
-				(rectangle
-					(start -5.08 5.08)
-					(end 5.08 -2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "HT75xx-1-SOT89_1_1"
 				(pin power_in line
-					(at -7.62 2.54 0)
+					(at 0 -7.62 90)
 					(length 2.54)
-					(name "VIN"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1386,17 +1462,18 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 -5.08 90)
+				(pin no_connect line
+					(at 5.08 0 180)
 					(length 2.54)
-					(name "GND"
+					(hide yes)
+					(name "NC"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1414,7 +1491,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1798,6 +1875,36 @@
 		(uuid "02b21eb7-1ec9-4047-8a0f-81cf459cb6ba")
 	)
 	(junction
+		(at 220.98 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1d93ab79-17f3-4b95-a319-84f4117bb73b")
+	)
+	(junction
+		(at 189.23 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "25e62b96-b733-4f42-8699-491161ce0e3b")
+	)
+	(junction
+		(at 242.57 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "374e9df3-fd22-489f-b100-a1b0ab72c2d4")
+	)
+	(junction
+		(at 220.98 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "54a3c4cd-1ad6-434c-8e10-81fcfd24375e")
+	)
+	(junction
+		(at 217.17 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "583aa505-27a1-42d8-9d30-c24c66d0498f")
+	)
+	(junction
 		(at 205.74 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1833,12 +1940,6 @@
 		(color 0 0 0 0)
 		(uuid "cc0f6409-5f6e-44b6-9267-90151009565b")
 	)
-	(junction
-		(at 242.57 86.36)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e6ff77cc-867b-4972-8874-e120cf548c99")
-	)
 	(no_connect
 		(at 82.55 54.61)
 		(uuid "4d8a90a3-2373-4a04-bb8d-e8f5709d953b")
@@ -1865,6 +1966,16 @@
 	)
 	(wire
 		(pts
+			(xy 220.98 60.96) (xy 229.87 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02021d34-f161-43ed-9d1f-a6937b08f540")
+	)
+	(wire
+		(pts
 			(xy 96.52 99.06) (xy 102.87 99.06)
 		)
 		(stroke
@@ -1872,6 +1983,16 @@
 			(type default)
 		)
 		(uuid "087daf6c-74d0-4264-b690-8bb63c354468")
+	)
+	(wire
+		(pts
+			(xy 217.17 83.82) (xy 217.17 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "092088c0-e547-4f6e-820f-5e29761801f0")
 	)
 	(wire
 		(pts
@@ -1885,7 +2006,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 67.945) (xy 242.57 67.945)
+			(xy 189.23 69.85) (xy 242.57 69.85)
 		)
 		(stroke
 			(width 0)
@@ -1902,6 +2023,16 @@
 			(type default)
 		)
 		(uuid "2a3e3092-a9d6-4cf5-bfc9-47697b19d88c")
+	)
+	(wire
+		(pts
+			(xy 242.57 83.82) (xy 242.57 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c6d2c49-80de-4342-aa3e-60cd0133c217")
 	)
 	(wire
 		(pts
@@ -1932,6 +2063,16 @@
 			(type default)
 		)
 		(uuid "4b3f00e3-66f9-4cb8-b091-bd6224f70616")
+	)
+	(wire
+		(pts
+			(xy 189.23 60.96) (xy 189.23 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b459a5b-3549-43d6-befb-bfa492473e56")
 	)
 	(wire
 		(pts
@@ -1995,7 +2136,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.025 62.865) (xy 200.025 53.34)
+			(xy 198.12 60.96) (xy 198.12 53.34)
 		)
 		(stroke
 			(width 0)
@@ -2045,6 +2186,16 @@
 	)
 	(wire
 		(pts
+			(xy 220.98 53.34) (xy 229.87 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e472231-071d-4e1b-9710-3bbf8f479bc6")
+	)
+	(wire
+		(pts
 			(xy 212.09 29.21) (xy 212.09 53.34)
 		)
 		(stroke
@@ -2062,6 +2213,16 @@
 			(type default)
 		)
 		(uuid "985c1586-408f-49f7-8bbc-a55873654693")
+	)
+	(wire
+		(pts
+			(xy 189.23 62.23) (xy 189.23 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2fff314-0c31-48c1-830b-39a57415ad8a")
 	)
 	(wire
 		(pts
@@ -2095,7 +2256,7 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 62.865) (xy 200.025 62.865)
+			(xy 189.23 60.96) (xy 198.12 60.96)
 		)
 		(stroke
 			(width 0)
@@ -2132,6 +2293,16 @@
 			(type default)
 		)
 		(uuid "c5aa3c4b-705c-45d7-8848-c5c52199f8a0")
+	)
+	(wire
+		(pts
+			(xy 189.23 46.99) (xy 189.23 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c917ec39-dfd4-4085-b807-388addf9deb3")
 	)
 	(wire
 		(pts
@@ -2185,6 +2356,16 @@
 	)
 	(wire
 		(pts
+			(xy 198.12 53.34) (xy 200.025 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ebefdffd-4677-4227-8967-e9a4bfa29d0c")
+	)
+	(wire
+		(pts
 			(xy 83.82 93.98) (xy 102.87 93.98)
 		)
 		(stroke
@@ -2195,7 +2376,7 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 86.36) (xy 242.57 86.36)
+			(xy 232.41 83.82) (xy 242.57 83.82)
 		)
 		(stroke
 			(width 0)
@@ -2205,7 +2386,7 @@
 	)
 	(wire
 		(pts
-			(xy 242.57 67.945) (xy 242.57 86.36)
+			(xy 242.57 69.85) (xy 242.57 83.82)
 		)
 		(stroke
 			(width 0)
@@ -2609,6 +2790,83 @@
 		)
 	)
 	(symbol
+		(lib_id "Regulator_Linear:AP2112K-3.3")
+		(at 224.79 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "22b6bc6a-f097-483d-b86e-4233837be5d2")
+		(property "Reference" "U2"
+			(at 224.79 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AP2112K-3.3"
+			(at 224.79 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 224.79 78.105 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP2112.pdf"
+			(at 224.79 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "600mA low dropout linear regulator, with enable pin, 3.8V-6V input voltage range, 3.3V fixed positive output, SOT-23-5"
+			(at 224.79 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "248bc0a4-ed0c-42aa-a2b5-21a32577947a")
+		)
+		(pin "3"
+			(uuid "2afa886e-b23b-4fd3-9740-d010a7e5e15d")
+		)
+		(pin "2"
+			(uuid "2ac2ac8b-f482-4bc1-867b-2fb5b95c2048")
+		)
+		(pin "5"
+			(uuid "ca84ea52-0ef7-4919-ba56-320caaed63d6")
+		)
+		(pin "4"
+			(uuid "8a43224f-9098-46f4-ba4f-36be2184c41d")
+		)
+		(instances
+			(project "sunx"
+				(path "/cdda6057-8c95-4e6d-a874-4b0832141970"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 80.645 77.47 0)
 		(unit 1)
@@ -2819,78 +3077,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Jumper:SolderJumper_3_Open")
-		(at 189.23 62.865 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4f8602cb-a509-4b59-a83a-1471e734ae5a")
-		(property "Reference" "JP1"
-			(at 186.69 61.5949 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SolderJumper_3_Open"
-			(at 186.69 64.1349 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels"
-			(at 189.23 62.865 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 189.23 62.865 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 189.23 62.865 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "654e1990-16ff-4560-87ce-6c115419222d")
-		)
-		(pin "2"
-			(uuid "c96598c1-5a44-4b4e-b5b9-a5a2f199d799")
-		)
-		(pin "3"
-			(uuid "770b2f7c-fb2f-41f6-a658-738faf3ba71d")
-		)
-		(instances
-			(project "sunx"
-				(path "/cdda6057-8c95-4e6d-a874-4b0832141970"
-					(reference "JP1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 107.95 106.68 0)
 		(unit 1)
@@ -2955,6 +3141,146 @@
 			(project "sunx"
 				(path "/cdda6057-8c95-4e6d-a874-4b0832141970"
 					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 189.23 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "63cc4095-5497-4bf2-bd2e-9feb9645218c")
+		(property "Reference" "R2"
+			(at 191.77 64.7699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0R"
+			(at 191.77 67.3099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 187.452 66.04 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 189.23 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 189.23 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fefe1f20-ce55-4531-8bf2-c2da903d1765")
+		)
+		(pin "2"
+			(uuid "d2afc03e-981a-4805-9169-7160a39557fd")
+		)
+		(instances
+			(project "sunx"
+				(path "/cdda6057-8c95-4e6d-a874-4b0832141970"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 229.87 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "77459647-23fc-4950-8789-a7f7c099e3f9")
+		(property "Reference" "C5"
+			(at 233.68 54.9909 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C30242"
+			(at 233.68 57.5309 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
+			(at 230.8352 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 229.87 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "TANT 220uF ±20% 6.3V CASE-B-3528-21"
+			(at 229.87 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "78f103d0-3e6c-41c2-8c93-610c93079045")
+		)
+		(pin "1"
+			(uuid "b3552480-4267-48a3-833b-e735af27c0c3")
+		)
+		(instances
+			(project ""
+				(path "/cdda6057-8c95-4e6d-a874-4b0832141970"
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -3133,79 +3459,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Regulator_Linear:HT75xx-1-SOT89")
-		(at 224.79 88.9 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b583e8e0-f458-43ee-b6f0-e85b0af2a206")
-		(property "Reference" "U1"
-			(at 224.79 80.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "HT7333-3-SOT89"
-			(at 224.79 82.288 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-89-3"
-			(at 224.79 80.645 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/Linear-Voltage-Regulators-LDO_Holtek-Semicon-HT7333-3_C84207.html"
-			(at 224.79 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 224.79 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "17212eb9-c95a-4107-aea9-81d11be56c9e")
-		)
-		(pin "2"
-			(uuid "ac2511fc-7f20-495d-9245-d525e7661581")
-		)
-		(pin "3"
-			(uuid "98254501-f5da-4f8f-b355-6d724f79f5e8")
-		)
-		(instances
-			(project "sunx"
-				(path "/cdda6057-8c95-4e6d-a874-4b0832141970"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
-		(at 189.23 57.785 0)
+		(at 189.23 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3214,7 +3469,7 @@
 		(fields_autoplaced yes)
 		(uuid "badc95c8-0281-4840-b404-c9ff1a0a45d3")
 		(property "Reference" "#PWR01"
-			(at 189.23 61.595 0)
+			(at 189.23 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3223,7 +3478,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 189.23 53.84 0)
+			(at 189.23 43.045 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3231,7 +3486,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 189.23 57.785 0)
+			(at 189.23 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3240,7 +3495,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 189.23 57.785 0)
+			(at 189.23 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3249,7 +3504,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 189.23 57.785 0)
+			(at 189.23 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3331,6 +3586,76 @@
 			(project "sunx"
 				(path "/cdda6057-8c95-4e6d-a874-4b0832141970"
 					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 189.23 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "d1a08323-fc46-469a-8013-96936bada299")
+		(property "Reference" "R1"
+			(at 191.77 54.6099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0R"
+			(at 191.77 57.1499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 187.452 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 189.23 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 189.23 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "890541a9-a0da-4883-ac30-f1c490015d73")
+		)
+		(pin "2"
+			(uuid "e98d95b3-6374-4915-b79e-d7868d7c1d66")
+		)
+		(instances
+			(project ""
+				(path "/cdda6057-8c95-4e6d-a874-4b0832141970"
+					(reference "R1")
 					(unit 1)
 				)
 			)
