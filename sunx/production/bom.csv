@@ -1,0 +1,8 @@
+"Id";"Designator";"Footprint";"Quantity";"Designation";"Supplier and ref";
+1;"JP6,JP5,JP4,JP3,JP2,JP1";"SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm";6;"SolderJumper_2_Open";;;
+2;"J2,J1";"PinHeader_1x05_P2.54mm_Vertical";2;"Conn_01x05_Socket";;;
+3;"U1";"SOT-89-3";1;"HT7333-3-SOT89";;;
+4;"JP9";"SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels";1;"SolderJumper_3_Open";;;
+5;"con1";"Molex_PicoBlade_53261-0871_1x08-1MP_P1.25mm_Horizontal";1;"Conn_01x08_MountingPin";;;
+6;"C1,C2";"C_0603_1608Metric";2;"10uf / 25V";;;
+7;"JP11,JP12,JP13,JP10";"SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm";4;"SolderJumper_2_Open";;;
